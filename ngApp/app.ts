@@ -1,6 +1,7 @@
 namespace joshuaschmuck {
 
-    angular.module('joshuaschmuck', ['ui.router', 'ngResource', 'ui.bootstrap']).config((
+    angular.module('joshuaschmuck', ['ui.router', 'ngResource', 'ui.bootstrap', 'uiGmapgoogle-maps']).config((
+        uiGmapGoogleMapApiProvider: any,
         $stateProvider: ng.ui.IStateProvider,
         $urlRouterProvider: ng.ui.IUrlRouterProvider,
         $locationProvider: ng.ILocationProvider

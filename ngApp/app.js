@@ -1,6 +1,6 @@
 var joshuaschmuck;
 (function (joshuaschmuck) {
-    angular.module('joshuaschmuck', ['ui.router', 'ngResource', 'ui.bootstrap']).config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    angular.module('joshuaschmuck', ['ui.router', 'ngResource', 'ui.bootstrap', 'uiGmapgoogle-maps']).config(function (uiGmapGoogleMapApiProvider, $stateProvider, $urlRouterProvider, $locationProvider) {
         $stateProvider
             .state('home', {
             url: '/',
