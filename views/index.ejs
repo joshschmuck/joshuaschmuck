@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app="joshuaschmuck" ng-cloak>
+
+<head>
+  <title>joshuaschmuck</title>
+  <meta charset="utf-8">
+  <base href="/" />
+  <link rel="stylesheet" href="/ngApp/css/site.css">
+  <link rel="stylesheet" href="/ngApp/css/carousel.css">
+  <link rel="stylesheet" href="/ngApp/css/footer.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+  <div class="container">
+        <div>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/">Joshua Schmuck</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="/projects">Projects<span class="sr-only">(current)</span></a></li>
+                            <li><a href="/about">About</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="https://www.linkedin.com/in/joshschmuck"><img style="filter:invert(100%)" src="/ngApp/images/Glyphicons/glyphicons-social-18-linked-in.png" /></a></li>
+                            <li><a href="https://github.com/joshschmuck"><img style="filter:invert(100%)" src="/ngApp/images/Glyphicons/glyphicons-social-22-github.png" /></a></li>
+                            <li id="copyButton" data-toggle="modal" data-target="#emailModal"><a href="#" id="copyTarget"><img style="filter:invert(100%)" src="/ngApp/images/glyphicons/glyphicons-social-19-gmail.png" /> josh.schmuck@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </nav>
+            <div class="modal fade" id="emailModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title blackFont">Copy/Paste or Email</h4>
+                        </div>
+                        <div class="modal-body blackFont">
+                            <p>The GMAIL account "josh.schmuck@gmail.com" has been copied to your clipboard!<br />
+                            <strong>OR</strong> <br />
+                            Email me: <a href="mailto:josh.schmuck@gmail.com">josh.schmuck@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ui-view></ui-view>
+    </div>
+    <div ng-include="'ngApp/views/footer.html'"></div>
+
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="/bower_components/angular-resource/angular-resource.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/angular-touch/angular-touch.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+  <script src="/ngApp/app.js"></script>
+  <script src="/ngApp/controllers/controllers.js"></script>
+  <script src="/ngApp/services/services.js"></script>
+
+  <!--Google Maps-->
+  <script src="/bower_components/lodash/dist/lodash.js"></script>
+  <script src="/bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+  <script src="/bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAATVXFt0gR0ASYtiURGYyL9qD05zqpKms"></script>
+
+  <!--Additional Files-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script></script>
+
+</body>
+
+</html>
