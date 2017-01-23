@@ -5,7 +5,7 @@
     padding-right: 15px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 60%;
 }
 
 .footer .contact {
@@ -21,4 +21,9 @@
 .footer .copyright {
     text-align: center;
     padding-bottom: 7px;
+}
+
+.footerPosition {
+  padding-left: 20%;
+  padding-right: 20%;
 }
