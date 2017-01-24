@@ -4,7 +4,7 @@ body {
     background-image: url('/ngApp/images/simple-wallpaper-26.jpg') !important;
     background-size: cover !important;
     background-attachment: fixed;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 }
 
 .angular-google-map-container {
@@ -18,6 +18,11 @@ body {
 
 .media-object {
     width: 120px;
+}
+
+.jumbotron {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .jumbotronPosition {
